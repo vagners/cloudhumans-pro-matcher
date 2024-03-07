@@ -11,9 +11,9 @@ namespace ProMatcher.Domain.FixedValues
 
     public class EducationLevel : FixedValueBase<EEducationLevel>
     {
-        public static EducationLevel NoEducation = new EducationLevel(EEducationLevel.no_education, "No education", 0);
-        public static EducationLevel HighSchool = new EducationLevel(EEducationLevel.high_school, "High school", 1);
-        public static EducationLevel BachelorsDegreeOrHigh = new EducationLevel(EEducationLevel.bachelors_degree_or_high, "Bachelors degree or high", 2);
+        public static EducationLevel NoEducation = new EducationLevel(EEducationLevel.no_education, "no_education", 0);
+        public static EducationLevel HighSchool = new EducationLevel(EEducationLevel.high_school, "high_school", 1);
+        public static EducationLevel BachelorsDegreeOrHigh = new EducationLevel(EEducationLevel.bachelors_degree_or_high, "bachelors_degree_or_high", 2);
 
 
         public static readonly EducationLevel[] All = new[]
@@ -30,11 +30,11 @@ namespace ProMatcher.Domain.FixedValues
 
         public static implicit operator EducationLevel(string? fixedValueType)
         {
+            if (fixedValueType == null)
+                throw new FixedValueNotFoundException();
+
             try
             {
-                if (fixedValueType == null)
-                    throw new FixedValueNotFoundException();
-
                 return All.Single(x => x.FixedValueType.ToString() == fixedValueType);
             }
             catch (Exception ex)

@@ -1,10 +1,10 @@
 ﻿using ProMatcher.Domain.Exceptions;
 
-namespace ProMatcher.Domain.ValueObejcts
+namespace ProMatcher.Domain.ValueObjects
 {
     public class WritingScore : ScorePointsBase
     {
-        public WritingScore(float score)
+        private WritingScore(float score)
         {
             if (score < 0 || score > 1)
                 throw new BusinessException("Writing Score must be between 0 and 1");

@@ -1,8 +1,8 @@
-﻿namespace ProMatcher.Domain.ValueObejcts
+﻿namespace ProMatcher.Domain.ValueObjects
 {
     public class InternetTest : ScorePointsBase
     {
-        public InternetTest(int scorePoints) => ScorePoints = scorePoints;
+        private InternetTest(int scorePoints) => ScorePoints = scorePoints;
 
         private static int CalculateScorePoints(float speed)
         {

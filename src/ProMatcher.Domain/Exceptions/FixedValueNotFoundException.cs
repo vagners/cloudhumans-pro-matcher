@@ -2,10 +2,10 @@
 {
     public class FixedValueNotFoundException : Exception
     {
-        public FixedValueNotFoundException() : base($"TypeNotMatch")
+        public FixedValueNotFoundException() : base("Value cannot be null")
         { }
 
-        public FixedValueNotFoundException(string fixedValueType, Exception exception) : base($"Type not found {fixedValueType}", exception)
+        public FixedValueNotFoundException(string fixedValueType, Exception exception) : base($"Value '{fixedValueType}' not found in EducationLevel.", exception)
         { }
     }
 }

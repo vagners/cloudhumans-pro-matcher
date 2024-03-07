@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProMatcher.Domain", "ProMat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProMatcher.Infra", "ProMatcher.Infra\ProMatcher.Infra.csproj", "{7CCA40FE-CEF9-410C-A7E4-A6215535B14F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E5CA95AD-76FA-4339-A024-D5BC39FA1DCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProMatcher.Domain.Tests", "ProMatcher.Domain.Tests\ProMatcher.Domain.Tests.csproj", "{360CC24A-EFC8-4A87-8358-F92118A1F8AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +31,16 @@ Global
 		{7CCA40FE-CEF9-410C-A7E4-A6215535B14F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CCA40FE-CEF9-410C-A7E4-A6215535B14F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CCA40FE-CEF9-410C-A7E4-A6215535B14F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{360CC24A-EFC8-4A87-8358-F92118A1F8AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{360CC24A-EFC8-4A87-8358-F92118A1F8AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{360CC24A-EFC8-4A87-8358-F92118A1F8AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{360CC24A-EFC8-4A87-8358-F92118A1F8AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{360CC24A-EFC8-4A87-8358-F92118A1F8AC} = {E5CA95AD-76FA-4339-A024-D5BC39FA1DCB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {691FB4C5-4554-46E4-8309-1FFF8C182BC3}
