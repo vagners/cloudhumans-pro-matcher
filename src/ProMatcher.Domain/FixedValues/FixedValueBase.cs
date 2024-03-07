@@ -1,4 +1,4 @@
-﻿using ProMatcher.Domain.ValueObejcts;
+﻿using ProMatcher.Domain.ValueObjects;
 
 namespace ProMatcher.Domain.FixedValues
 {
@@ -12,7 +12,5 @@ namespace ProMatcher.Domain.FixedValues
 
         public T FixedValueType { get; }
         public string Description { get; }
-
-        
     }
 }

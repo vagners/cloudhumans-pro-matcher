@@ -1,4 +1,4 @@
-﻿namespace ProMatcher.Domain.ValueObejcts
+﻿namespace ProMatcher.Domain.ValueObjects
 {
     public abstract class ScorePointsBase
     {

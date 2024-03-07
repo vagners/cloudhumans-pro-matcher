@@ -1,6 +1,6 @@
 ﻿using ProMatcher.Domain.Exceptions;
 
-namespace ProMatcher.Domain.ValueObejcts
+namespace ProMatcher.Domain.ValueObjects
 {
     public class Age
     {

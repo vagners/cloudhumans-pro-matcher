@@ -1,5 +1,5 @@
 ﻿using ProMatcher.Domain.Commands;
-using ProMatcher.Domain.ValueObejcts;
+using ProMatcher.Domain.ValueObjects;
 
 namespace ProMatcher.Api.Models
 {
@@ -11,7 +11,7 @@ namespace ProMatcher.Api.Models
                 request.Age,
                 request.EducationLevel,
                 Domain.FixedValues.PastExperiences.Create(request.PastExperiences.Sales, request.PastExperiences.Support),
-                Domain.ValueObejcts.InternetTest.Create(request.InternetTest.DownloadSpeed, request.InternetTest.UploadSpeed),
+                Domain.ValueObjects.InternetTest.Create(request.InternetTest.DownloadSpeed, request.InternetTest.UploadSpeed),
                 WritingScore.Create(request.WritingScore),
                 request.ReferralCode);
         }

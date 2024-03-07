@@ -1,7 +1,7 @@
 ﻿using ProMatcher.Domain.Commands;
 using ProMatcher.Domain.Entities;
 using ProMatcher.Domain.Repositories;
-using ProMatcher.Domain.ValueObejcts;
+using ProMatcher.Domain.ValueObjects;
 
 namespace ProMatcher.Domain.Services
 {

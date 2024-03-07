@@ -8,7 +8,7 @@ namespace ProMatcher.Domain.FixedValues
         public static PastExperiences Support = new PastExperiences(1, "Support", 3);
         public static PastExperiences SalesAndSupport = new PastExperiences(2, "Sales and Support", Sales.ScorePoints + Support.ScorePoints);
 
-        public PastExperiences(int fixedValueType, string description, int scorePoints) : base(fixedValueType, description)
+        private PastExperiences(int fixedValueType, string description, int scorePoints) : base(fixedValueType, description)
         {
             ScorePoints = scorePoints;
         }

@@ -1,5 +1,5 @@
 ﻿using ProMatcher.Domain.Repositories;
-using ProMatcher.Domain.ValueObejcts;
+using ProMatcher.Domain.ValueObjects;
 
 namespace ProMatcher.Infra.Repositories
 {
