@@ -1,4 +1,5 @@
-REM dotnet tool install -g dotnet-reportgenerator-globaltool
+#!/bin/sh
+dotnet tool install -g dotnet-reportgenerator-globaltool
 
 dotnet test --collect:"XPlat Code Coverage"
 reportgenerator "-reports:./TestResults/**/*.cobertura.xml" "-targetdir:TestResults/" "-reporttypes:HTML;"
