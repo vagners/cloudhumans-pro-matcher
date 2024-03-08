@@ -23,7 +23,7 @@ namespace ProMatcher.Domain.FixedValues
             BachelorsDegreeOrHigh
         };
 
-        public EducationLevel(EEducationLevel fixedValueType, string description, int scorePoints) : base(fixedValueType, description)
+        private EducationLevel(EEducationLevel fixedValueType, string description, int scorePoints) : base(fixedValueType, description)
         {
             ScorePoints = scorePoints;
         }

@@ -18,6 +18,9 @@ namespace ProMatcher.Api.Controllers
         [ProducesResponseType(typeof(string), (int)HttpStatusCode.BadRequest)]
         public async Task<ActionResult> MatchPro([FromBody] MatchProRequest request)
         {
+            if (request is null)
+                return BadRequest();
+
             try
             {
                 var command = MatchProMapper.MapFromRequest(request);
