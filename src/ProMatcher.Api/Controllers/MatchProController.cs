@@ -6,6 +6,7 @@ using ProMatcher.Domain.Exceptions;
 
 namespace ProMatcher.Api.Controllers
 {
+
     public class MatchProController : Controller
     {
         private readonly MatchProService _matchProService;
@@ -14,6 +15,7 @@ namespace ProMatcher.Api.Controllers
 
         [HttpPost]
         [Route("matchpro")]
+        [ValidateAntiForgeryToken]
         [ProducesResponseType(typeof(MatchProResponse), (int)HttpStatusCode.OK)]
         [ProducesResponseType(typeof(string), (int)HttpStatusCode.BadRequest)]
         public async Task<ActionResult> MatchPro([FromBody] MatchProRequest request)

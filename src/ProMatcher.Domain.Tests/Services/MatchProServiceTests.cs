@@ -1,15 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Moq;
+﻿using Moq;
 using ProMatcher.Domain.Commands;
 using ProMatcher.Domain.Entities;
-using ProMatcher.Domain.Exceptions;
 using ProMatcher.Domain.FixedValues;
 using ProMatcher.Domain.Repositories;
 using ProMatcher.Domain.Services;
 using ProMatcher.Domain.ValueObjects;
-using Xunit;
 
 namespace ProMatcher.Domain.Tests.Services
 {
