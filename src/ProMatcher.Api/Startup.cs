@@ -23,6 +23,7 @@ namespace ProMatcher.Api
             services.AddScoped<IProjectRepository, ProjectRepository>();
 
             services.AddControllers();
+            services.AddMvc();
 
             services.AddSwaggerGen(c =>
             {
